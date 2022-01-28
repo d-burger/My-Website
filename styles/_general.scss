@@ -103,10 +103,12 @@ a {
 .about-me-container {
   height: 100vh;
   margin-top: 5em;
+  position: relative;
 }
 .about-me {
   height: 700px;
   width: 60%;
+  max-width: 1000px;
   margin: auto;
   border: 3px solid rgba(63, 64, 64, 0.36);
   display: flex;
@@ -124,6 +126,44 @@ a {
 
 .about-me-text-1,
 .about-me-text-2 {
-  width: 60%;
+  width: 50%;
+  min-width: 500px;
   text-align: justify;
+  line-height: 25px;
+  font-weight: 300;
+}
+.txt-special-color {
+  color: var(--color-main);
+}
+
+.title-style {
+  position: relative;
+}
+.title-style:after {
+  content: "";
+  position: absolute;
+  height: 50px;
+  width: 100px;
+  right: -13px;
+  bottom: -3px;
+  border-right: 3px solid var(--color-main);
+  border-bottom: 3px solid var(--color-main);
+}
+.btn-work {
+  width: 300px;
+  height: 60px;
+  background-color: #282e2f;
+  border: 3px solid var(--color-main);
+  border-radius: 15px;
+  color: white;
+  font-size: 20px;
+  letter-spacing: 2px;
+  margin-bottom: 30px;
+}
+.shapes {
+  position: absolute;
+  width: 350px;
+  left: 120px;
+  top: 450px;
+  z-index: -1;
 }
