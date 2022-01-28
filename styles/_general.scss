@@ -1,0 +1,129 @@
+/*-----------------------------
+    GENERAL
+-----------------------------*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Roboto", sans-serif;
+  color: white;
+  background-color: #282e2f;
+  width: 90%;
+  margin: auto;
+
+  --color-main: #00ffc2;
+}
+
+.card-svg {
+  width: 100%;
+  max-width: 1190px;
+}
+
+.triangle {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+}
+
+.parting {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10em;
+}
+
+/*-----------------------------
+    NAVIGATION
+-----------------------------*/
+.header {
+  display: flex;
+  align-items: center;
+  height: 100px;
+  margin-bottom: 10em;
+}
+.logo {
+  width: 40%;
+}
+.logo-text {
+  color: var(--color-main);
+  font-size: 1.4rem;
+  letter-spacing: 2px;
+}
+nav {
+  width: 60%;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+.list {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 200px;
+  max-width: 1000px;
+}
+.list-item {
+  letter-spacing: 3px;
+  font-weight: bold;
+}
+.white {
+  color: white;
+}
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 55%;
+  right: 5%;
+}
+.sidebar img {
+  max-width: 40px;
+  margin-top: 2em;
+}
+
+/*-----------------------------
+    HERO
+-----------------------------*/
+.hero {
+  display: flex;
+  max-width: 1500px;
+  margin: auto;
+}
+
+/*-----------------------------
+    ABOUT ME
+-----------------------------*/
+.about-me-container {
+  height: 100vh;
+  margin-top: 5em;
+}
+.about-me {
+  height: 700px;
+  width: 60%;
+  margin: auto;
+  border: 3px solid rgba(63, 64, 64, 0.36);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  box-shadow: 10px 10px 4px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(4px);
+  border-radius: 10px;
+}
+.title h1 {
+  font-size: 48px;
+  font-weight: 500;
+}
+
+.about-me-text-1,
+.about-me-text-2 {
+  width: 60%;
+  text-align: justify;
+}
