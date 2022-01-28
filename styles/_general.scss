@@ -98,10 +98,90 @@ a {
 }
 
 /*-----------------------------
+    SKILLS
+-----------------------------*/
+.skills-container {
+  height: 1000px;
+  margin-top: 5em;
+  position: relative;
+}
+.skills {
+  position: relative;
+  height: 700px;
+  width: 60%;
+  max-width: 1000px;
+  margin: auto;
+  border: 3px solid rgba(63, 64, 64, 0.36);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  // justify-content: space-around;
+  box-shadow: 10px 10px 4px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(4px);
+  border-radius: 10px;
+}
+.title-skills h1 {
+  font-size: 48px;
+  font-weight: 500;
+  margin-top: 40px;
+  letter-spacing: 2px;
+}
+
+.svg-1 {
+  width: 80px;
+}
+.svg-2 {
+  width: 60px;
+}
+
+.react-svg {
+  position: absolute;
+  top: 250px;
+  left: 150px;
+}
+.node-svg {
+  position: absolute;
+  top: 200px;
+  right: 180px;
+}
+.js-svg {
+  position: absolute;
+  top: 500px;
+  left: 250px;
+}
+.css-svg {
+  position: absolute;
+  top: 430px;
+  right: 150px;
+}
+.flying-text {
+  position: absolute;
+  font-weight: 300;
+  color: var(--color-main);
+  top: 370px;
+  animation-name: fly;
+  animation-duration: 2.5s;
+  // animation-fill-mode: both;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes fly {
+  from {
+    transform: rotate(0deg) translateX(10px) rotate(0deg);
+    opacity: 0;
+  }
+  to {
+    transform: rotate(360deg) translateX(10px) rotate(-360deg);
+    opacity: 1;
+  }
+}
+
+/*-----------------------------
     ABOUT ME
 -----------------------------*/
 .about-me-container {
-  height: 100vh;
+  height: 1000px;
   margin-top: 5em;
   position: relative;
 }
@@ -122,6 +202,8 @@ a {
 .title h1 {
   font-size: 48px;
   font-weight: 500;
+  margin-top: -1px;
+  letter-spacing: 1px;
 }
 
 .about-me-text-1,
@@ -136,19 +218,6 @@ a {
   color: var(--color-main);
 }
 
-.title-style {
-  position: relative;
-}
-.title-style:after {
-  content: "";
-  position: absolute;
-  height: 50px;
-  width: 100px;
-  right: -13px;
-  bottom: -3px;
-  border-right: 3px solid var(--color-main);
-  border-bottom: 3px solid var(--color-main);
-}
 .btn-work {
   width: 300px;
   height: 60px;
@@ -166,4 +235,21 @@ a {
   left: 120px;
   top: 450px;
   z-index: -1;
+}
+
+/*-----------------------------
+    GLOBAL FUNCTIONALITY
+-----------------------------*/
+.title-style {
+  position: relative;
+}
+.title-style:after {
+  content: "";
+  position: absolute;
+  height: 50px;
+  width: 100px;
+  right: -13px;
+  bottom: -3px;
+  border-right: 3px solid var(--color-main);
+  border-bottom: 3px solid var(--color-main);
 }
