@@ -268,7 +268,8 @@ a {
 .about-me {
   height: 700px;
   width: 60%;
-  max-width: 1000px;
+  max-width: 800px;
+  min-width: 800px;
   margin: auto;
   border: 3px solid rgba(63, 64, 64, 0.36);
   display: flex;
@@ -303,7 +304,7 @@ a {
   height: 60px;
   background-color: #282e2f;
   border: 3px solid var(--color-main);
-  border-radius: 15px;
+  border-radius: 10px;
   color: white;
   font-size: 20px;
   letter-spacing: 2px;
@@ -320,7 +321,87 @@ a {
 /*-----------------------------
     PROJECT
 -----------------------------*/
+.projects-container {
+  height: 1000px;
+  margin-top: 5em;
+  position: relative;
+}
+.projects {
+  height: 700px;
+  width: 900px;
 
+  margin: auto;
+  border: 3px solid rgba(63, 64, 64, 0.36);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  box-shadow: 10px 10px 4px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(4px);
+  border-radius: 10px;
+}
+.title h1 {
+  font-size: 48px;
+  font-weight: 500;
+  margin-top: 40px;
+  letter-spacing: 1px;
+}
+.project-container {
+  width: 100%;
+}
+.project-card {
+  position: relative;
+  width: 400px;
+  border: 2px solid var(--color-main);
+  border-radius: 10px;
+  margin-top: 80px;
+  margin-left: 100px;
+}
+.project-left {
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  h3 {
+    text-align: center;
+    margin-bottom: 10px;
+    color: var(--color-main);
+    font-weight: 400;
+  }
+}
+.project-right {
+  width: 150px;
+}
+.project-text {
+  text-align: justify;
+  font-weight: 300;
+  line-height: 25px;
+  margin-left: 20px;
+}
+.project-btns {
+  display: flex;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+.prev-btn {
+  background-color: #282e2f;
+  border: 2px solid var(--color-main);
+  border-radius: 10px;
+  width: 90px;
+  margin-right: 20px;
+  color: white;
+  font-size: 16px;
+}
+.project-img {
+  position: absolute;
+  width: 370px;
+  border-radius: 10px;
+  top: 35px;
+  left: 300px;
+  box-shadow: 10px 10px 4px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(4px);
+}
 /*-----------------------------
     GLOBAL FUNCTIONALITY
 -----------------------------*/
