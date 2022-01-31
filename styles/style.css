@@ -12,7 +12,7 @@ html {
   font-family: "Roboto", sans-serif;
   color: white;
   background-color: #282e2f;
-  width: 100%;
+  min-width: 100%;
   margin: auto;
   --color-main: #00ffc2;
 }
@@ -20,6 +20,10 @@ html {
 .card-svg {
   width: 100%;
   max-width: 1190px;
+}
+
+.shapes-svg {
+  display: none;
 }
 
 .triangle {
@@ -39,7 +43,7 @@ html {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 10em;
+  margin-top: 100px;
 }
 
 /*-----------------------------
@@ -93,8 +97,9 @@ a {
 }
 
 .list-item {
-  letter-spacing: 3px;
-  font-weight: bold;
+  letter-spacing: 2px;
+  font-weight: 500;
+  font-size: 18px;
 }
 
 .white {
@@ -109,9 +114,9 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  position: absolute;
-  top: 55%;
-  right: 5%;
+  position: fixed;
+  top: 700px;
+  right: 100px;
 }
 
 .sidebar img {
@@ -134,16 +139,14 @@ a {
     SKILLS
 -----------------------------*/
 .skills-container {
-  height: 1000px;
-  margin-top: 5em;
+  margin-top: 100px;
   position: relative;
 }
 
 .skills {
   position: relative;
   height: 700px;
-  width: 60%;
-  max-width: 1000px;
+  max-width: 900px;
   min-width: 900px;
   margin: auto;
   border: 3px solid rgba(63, 64, 64, 0.36);
@@ -357,18 +360,15 @@ a {
     ABOUT ME
 -----------------------------*/
 .about-me-container {
-  height: 1000px;
-  margin-top: 5em;
   position: relative;
-  width: 800px;
-  margin: auto;
+  width: 900px;
+  margin: 100px auto 0 auto;
 }
 
 .about-me {
   height: 700px;
-  width: 60%;
-  max-width: 800px;
-  min-width: 800px;
+  max-width: 900px;
+  min-width: 900px;
   margin: auto;
   border: 3px solid rgba(63, 64, 64, 0.36);
   display: -webkit-box;
@@ -434,9 +434,8 @@ a {
     PROJECT
 -----------------------------*/
 .projects-container {
-  height: 1000px;
-  margin-top: 5em;
   position: relative;
+  margin: 100px auto 0 auto;
 }
 
 .projects {
@@ -558,7 +557,7 @@ a {
           align-items: center;
   position: relative;
   width: 800px;
-  margin: auto;
+  margin: 150px auto 0 auto;
 }
 
 .contact-phone {
@@ -777,5 +776,129 @@ footer {
   bottom: -3px;
   border-right: 3px solid var(--color-main);
   border-bottom: 3px solid var(--color-main);
+}
+
+/*-----------------------------
+    MEDIA QUERIES
+-----------------------------*/
+@media only screen and (max-width: 1580px) {
+  .list {
+    margin-right: 0px;
+    margin-left: 100px;
+  }
+  .header {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    height: 100px;
+    width: 100%;
+    margin: 0 0 20px 0;
+  }
+  .logo {
+    margin-left: 50px;
+    min-width: 275px;
+  }
+  nav {
+    min-width: 400px;
+  }
+  .list {
+    margin-left: 0;
+    margin-right: 50px;
+  }
+  .hero {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .card-svg {
+    width: 1000px;
+  }
+  .triangle {
+    display: none;
+  }
+  .sidebar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: fixed;
+    top: 500px;
+    right: 50px;
+  }
+  .sidebar img {
+    width: 35px;
+  }
+  .shapes-svg {
+    position: absolute;
+    display: none;
+    z-index: -1;
+    top: 130px;
+    right: 50px;
+    width: 400px;
+    -webkit-transform: rotate(-35deg);
+            transform: rotate(-35deg);
+  }
+}
+
+@media only screen and (max-width: 1580px) {
+  .contact-phone {
+    width: 300px;
+    margin-left: 300px;
+    margin-bottom: 150px;
+  }
+  .bubble-right {
+    width: 300px;
+    height: 100px;
+    font-size: 20px;
+    left: 600px;
+    top: 100px;
+  }
+  .bubble-left {
+    width: 600px;
+    font-size: 20px;
+    left: -100px;
+    top: 260px;
+  }
+  .bubble-bottom-right:before {
+    content: "";
+    -webkit-transform: rotate(225deg);
+            transform: rotate(225deg);
+    left: 575px;
+    bottom: 53px;
+  }
+  .input-container input {
+    width: 250px;
+  }
+}
+
+@media only screen and (max-width: 1160px) {
+  .sidebar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    position: absolute;
+    top: 90px;
+    right: 50px;
+  }
+  .sidebar img {
+    width: 35px;
+    margin-left: 30px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
