@@ -25,6 +25,9 @@ html {
 .about-me-container-m {
   display: none;
 }
+.projects-container-m {
+  display: none;
+}
 
 .card-svg {
   width: 100%;
@@ -1017,8 +1020,90 @@ footer {
     margin-top: 30px;
     margin-bottom: 30px;
   }
+  // ----------------------- PROJECTS --------------------------- //
   .projects-container {
     display: none;
+  }
+  .projects-container-m {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 100px;
+    position: relative;
+  }
+  .projects-m {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 10px 0 10px;
+    border: 3px solid rgba(63, 64, 64, 0.36);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 95%;
+    max-width: 420px;
+    box-shadow: 10px 10px 4px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(4px);
+    border-radius: 10px;
+    padding: 10px;
+  }
+  .title-m h1 {
+    font-size: 24px;
+    font-weight: 400;
+    letter-spacing: 1px;
+  }
+  .project-container-m {
+    width: 100%;
+  }
+  .project-card-m {
+    width: 90%;
+    margin: 30px auto 30px auto;
+    border: 2px solid var(--color-main);
+    border-radius: 10px;
+  }
+  .project-m {
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    margin: 10px auto 10px auto;
+    h3 {
+      text-align: center;
+      margin-bottom: 10px;
+      color: var(--color-main);
+      font-weight: 400;
+    }
+  }
+
+  .project-text-m {
+    text-align: justify;
+    font-weight: 300;
+    line-height: 25px;
+    width: 95%;
+    margin: 0 auto 20px auto;
+  }
+  .project-btns-m {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+
+    margin-bottom: 10px;
+  }
+  .prev-btn-m {
+    background-color: #282e2f;
+    border: 2px solid var(--color-main);
+    border-radius: 10px;
+    width: 90px;
+    margin-right: 20px;
+    color: white;
+    font-size: 16px;
+  }
+  .project-img-m {
+    width: 250px;
+    border-radius: 10px;
+
+    box-shadow: 10px 10px 4px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(4px);
   }
   .contact-container {
     display: none;
