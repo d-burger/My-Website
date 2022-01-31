@@ -595,7 +595,7 @@ footer {
   position: absolute;
   height: 30px;
   width: 50px;
-  right: -13px;
+  right: -7px;
   bottom: -3px;
   border-right: 3px solid var(--color-main);
   border-bottom: 3px solid var(--color-main);
@@ -799,12 +799,151 @@ footer {
     box-shadow: 10px 10px 4px rgba(0, 0, 0, 0.25);
     backdrop-filter: blur(4px);
     border-radius: 10px;
+    padding: 10px;
   }
-  .title-skills h1 {
-    font-size: 48px;
-    font-weight: 500;
-    margin-top: 40px;
-    letter-spacing: 2px;
+  .row-1-m {
+    margin-top: 80px;
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .row-2-m {
+    margin-top: 130px;
+    margin-bottom: 80px;
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .svg-m {
+    width: 50px;
+  }
+  .title-skills-m h1 {
+    font-size: 24px;
+    font-weight: 400;
+    letter-spacing: 1px;
+  }
+  .react-svg {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+  }
+  .node-svg {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+  }
+  .js-svg {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+  }
+  .css-svg {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+  }
+  .express {
+    position: absolute;
+    top: 90px;
+    right: 160px;
+    animation-delay: 0.5s;
+  }
+  .html5 {
+    position: absolute;
+    top: 170px;
+    left: 150px;
+    animation-delay: 0.5s;
+  }
+  .scss {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+  }
+  .puppeteer {
+    position: absolute;
+    top: 380px;
+    left: 130px;
+    animation-delay: 0.7s;
+  }
+  .mongodb {
+    position: absolute;
+    top: 240px;
+    left: 80px;
+  }
+  .postgresql {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    animation-delay: 0.2s;
+  }
+  .github {
+    position: absolute;
+    top: 190px;
+    left: 30px;
+    animation-delay: 1.5s;
+  }
+  .bootstrap {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    animation-delay: 0.9s;
+  }
+  .git {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    animation-delay: 1s;
+  }
+  .figma {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    animation-delay: 1s;
+  }
+  .heroku {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    animation-delay: 0.2s;
+  }
+  .netlify {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    animation-delay: 0.5s;
+  }
+  .json {
+    position: absolute;
+    top: 200px;
+    right: 40px;
+    animation-delay: 1.3s;
+  }
+
+  .flying-text {
+    position: absolute;
+    font-weight: 300;
+    color: var(--color-main);
+    animation-name: fly-m;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+
+  @keyframes fly-m {
+    0% {
+      // transform: rotate(0deg) translateX(5px) rotate(0deg);
+      opacity: 1;
+    }
+    50% {
+      // transform: rotate(180deg) translateX(5px) rotate(-180deg);
+      opacity: 0.2;
+    }
+    100% {
+      // transform: rotate(360deg) translateX(5px) rotate(-360deg);
+      opacity: 1;
+    }
   }
   .about-me-container {
     display: none;
