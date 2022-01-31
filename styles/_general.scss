@@ -587,6 +587,19 @@ footer {
   border-right: 3px solid var(--color-main);
   border-bottom: 3px solid var(--color-main);
 }
+.title-style-m {
+  position: relative;
+}
+.title-style-m:after {
+  content: "";
+  position: absolute;
+  height: 30px;
+  width: 50px;
+  right: -13px;
+  bottom: -3px;
+  border-right: 3px solid var(--color-main);
+  border-bottom: 3px solid var(--color-main);
+}
 
 /*-----------------------------
     MEDIA QUERIES
@@ -698,4 +711,111 @@ footer {
 }
 
 @media only screen and (max-width: 1015px) {
+  .header,
+  .hero,
+  .hero-parting,
+  .sidebar {
+    display: none;
+  }
+  .mobile-header {
+    display: flex;
+    flex-direction: column;
+
+    .nav-m {
+      display: flex;
+      height: 100px;
+      align-items: center;
+      justify-content: space-between;
+      width: 80%;
+      margin: auto;
+    }
+  }
+  .logo-text {
+    font-size: 18px;
+    letter-spacing: 1px;
+  }
+  .burger div {
+    width: 25px;
+    height: 3px;
+    background-color: var(--color-main);
+    margin: 5px;
+  }
+  .selfie-container-m {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .selfie-m {
+    width: 180px;
+    border: 2px solid var(--color-main);
+    padding: 2px;
+    border-radius: 90px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    box-shadow: 10px 10px 4px rgba(0, 0, 0, 0.25);
+  }
+  .introduction-m {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid rgba(63, 64, 64, 0.36);
+    box-shadow: 10px 10px 4px rgba(0, 0, 0, 0.25);
+    width: 80%;
+    border-radius: 10px;
+    margin: 0 auto 50px auto;
+    padding: 5px 0 5px 0;
+  }
+  .name-m {
+    font-size: 28px;
+    margin-bottom: 18px;
+  }
+  .profession-m {
+    font-size: 18px;
+  }
+  .social-icons-m {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 200px;
+    margin: 0 auto 0 auto;
+  }
+  // ----------------------- SKILLS --------------------------- //
+  .skills-container {
+    display: none;
+  }
+  .skills-container-m {
+    margin-top: 100px;
+    position: relative;
+  }
+  .skills-m {
+    position: relative;
+    margin: 0 10px 0 10px;
+    border: 3px solid rgba(63, 64, 64, 0.36);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    // justify-content: space-around;
+    box-shadow: 10px 10px 4px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(4px);
+    border-radius: 10px;
+  }
+  .title-skills h1 {
+    font-size: 48px;
+    font-weight: 500;
+    margin-top: 40px;
+    letter-spacing: 2px;
+  }
+  .about-me-container {
+    display: none;
+  }
+  .projects-container {
+    display: none;
+  }
+  .contact-container {
+    display: none;
+  }
+  footer {
+    margin-top: 300px;
+  }
 }
