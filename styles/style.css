@@ -13,44 +13,50 @@ html {
   color: white;
   background-color: #282e2f;
   min-width: 100%;
-  margin: auto;
-  --color-main: #00ffc2;
 }
 
-.mobile-header {
-  display: none;
-}
-
-.skills-container-m {
-  display: none;
-}
-
-.about-me-container-m {
-  display: none;
-}
-
-.projects-container-m {
-  display: none;
-}
-
+/*-----------------------------
+    Mobile View
+-----------------------------*/
+.mobile-header,
+.skills-container-m,
+.about-me-container-m,
+.projects-container-m,
 .contact-container-m {
   display: none;
 }
 
-.card-svg {
-  width: 100%;
-  max-width: 1190px;
+/*-----------------------------
+    GLOBAL FUNCTIONALITY
+-----------------------------*/
+.title-style {
+  position: relative;
 }
 
-.shapes-svg {
-  display: none;
-}
-
-.triangle {
+.title-style:after {
+  content: "";
   position: absolute;
-  top: 0;
-  right: 0;
-  z-index: -1;
+  height: 50px;
+  width: 100px;
+  right: -13px;
+  bottom: -3px;
+  border-right: 3px solid #00ffc2;
+  border-bottom: 3px solid #00ffc2;
+}
+
+.title-style-m {
+  position: relative;
+}
+
+.title-style-m:after {
+  content: "";
+  position: absolute;
+  height: 30px;
+  width: 50px;
+  right: -7px;
+  bottom: -3px;
+  border-right: 3px solid #00ffc2;
+  border-bottom: 3px solid #00ffc2;
 }
 
 .parting {
@@ -87,7 +93,7 @@ html {
 }
 
 .logo-text {
-  color: var(--color-main);
+  color: #00ffc2;
   font-size: 1.4rem;
   letter-spacing: 2px;
 }
@@ -145,14 +151,26 @@ a {
 }
 
 /*-----------------------------
-    HERO
------------------------------*/
+      HERO
+  -----------------------------*/
 .hero {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   max-width: 1500px;
   margin: auto;
+}
+
+.card-svg {
+  width: 100%;
+  max-width: 1190px;
+}
+
+.triangle {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
 }
 
 /*-----------------------------
@@ -329,7 +347,7 @@ a {
 .flying-text {
   position: absolute;
   font-weight: 300;
-  color: var(--color-main);
+  color: #00ffc2;
   -webkit-animation-name: fly;
           animation-name: fly;
   -webkit-animation-duration: 2.5s;
@@ -427,14 +445,14 @@ a {
 }
 
 .txt-special-color {
-  color: var(--color-main);
+  color: #00ffc2;
 }
 
 .btn-work {
   width: 300px;
   height: 60px;
   background-color: #282e2f;
-  border: 3px solid var(--color-main);
+  border: 3px solid #00ffc2;
   border-radius: 10px;
   color: white;
   font-size: 20px;
@@ -494,7 +512,7 @@ a {
 .project-card {
   position: relative;
   width: 400px;
-  border: 2px solid var(--color-main);
+  border: 2px solid #00ffc2;
   border-radius: 10px;
   margin-top: 80px;
   margin-left: 100px;
@@ -515,7 +533,7 @@ a {
 .project-left h3 {
   text-align: center;
   margin-bottom: 10px;
-  color: var(--color-main);
+  color: #00ffc2;
   font-weight: 400;
 }
 
@@ -541,7 +559,7 @@ a {
 
 .prev-btn {
   background-color: #282e2f;
-  border: 2px solid var(--color-main);
+  border: 2px solid #00ffc2;
   border-radius: 10px;
   width: 90px;
   margin-right: 20px;
@@ -607,7 +625,7 @@ a {
   text-align: center;
   color: white;
   margin-bottom: 100px;
-  border: 3px solid var(--color-main);
+  border: 3px solid #00ffc2;
   -webkit-box-shadow: 10px 10px 4px rgba(0, 0, 0, 0.25);
           box-shadow: 10px 10px 4px rgba(0, 0, 0, 0.25);
   font-size: 30px;
@@ -623,7 +641,7 @@ a {
   position: absolute;
   border-left: 20px solid transparent;
   border-right: 20px solid transparent;
-  border-bottom: 20px solid var(--color-main);
+  border-bottom: 20px solid #00ffc2;
   border-top: 20px solid transparent;
   display: inline-block;
   -webkit-transform: rotate(-45deg);
@@ -653,7 +671,7 @@ a {
   text-align: center;
   color: white;
   margin-bottom: 100px;
-  border: 3px solid var(--color-main);
+  border: 3px solid #00ffc2;
   -webkit-box-shadow: 10px 10px 4px rgba(0, 0, 0, 0.25);
           box-shadow: 10px 10px 4px rgba(0, 0, 0, 0.25);
   font-size: 30px;
@@ -669,7 +687,7 @@ a {
   position: absolute;
   border-left: 20px solid transparent;
   border-right: 20px solid transparent;
-  border-bottom: 20px solid var(--color-main);
+  border-bottom: 20px solid #00ffc2;
   border-top: 20px solid transparent;
   display: inline-block;
   -webkit-transform: rotate(45deg);
@@ -721,7 +739,7 @@ form {
   outline: none;
   font-size: 20px;
   border-radius: 10px;
-  border: 1px solid var(--color-main);
+  border: 1px solid #00ffc2;
   background-color: #282e2f;
   color: white;
   padding: 5px;
@@ -734,14 +752,14 @@ form {
   height: 150px;
   outline: none;
   border-radius: 10px;
-  border: 1px solid var(--color-main);
+  border: 1px solid #00ffc2;
   background-color: #282e2f;
   color: white;
   padding: 5px;
 }
 
 footer {
-  border-top: 2px solid var(--color-main);
+  border-top: 2px solid #00ffc2;
   margin: auto;
 }
 
@@ -764,7 +782,7 @@ footer {
 }
 
 .copyright-text {
-  color: var(--color-main);
+  color: #00ffc2;
   margin-right: 10px;
 }
 
@@ -778,39 +796,6 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-/*-----------------------------
-    GLOBAL FUNCTIONALITY
------------------------------*/
-.title-style {
-  position: relative;
-}
-
-.title-style:after {
-  content: "";
-  position: absolute;
-  height: 50px;
-  width: 100px;
-  right: -13px;
-  bottom: -3px;
-  border-right: 3px solid var(--color-main);
-  border-bottom: 3px solid var(--color-main);
-}
-
-.title-style-m {
-  position: relative;
-}
-
-.title-style-m:after {
-  content: "";
-  position: absolute;
-  height: 30px;
-  width: 50px;
-  right: -7px;
-  bottom: -3px;
-  border-right: 3px solid var(--color-main);
-  border-bottom: 3px solid var(--color-main);
 }
 
 /*-----------------------------
@@ -885,9 +870,6 @@ footer {
     -webkit-transform: rotate(-35deg);
             transform: rotate(-35deg);
   }
-}
-
-@media only screen and (max-width: 1580px) {
   .contact-phone {
     width: 300px;
     margin-left: 300px;
@@ -974,7 +956,7 @@ footer {
   .burger div {
     width: 25px;
     height: 3px;
-    background-color: var(--color-main);
+    background-color: #00ffc2;
     margin: 5px;
   }
   .selfie-container-m {
@@ -990,7 +972,7 @@ footer {
   }
   .selfie-m {
     width: 180px;
-    border: 2px solid var(--color-main);
+    border: 2px solid #00ffc2;
     padding: 2px;
     border-radius: 90px;
     margin-top: 30px;
@@ -1226,7 +1208,7 @@ footer {
   .flying-text {
     position: absolute;
     font-weight: 300;
-    color: var(--color-main);
+    color: #00ffc2;
     -webkit-animation-name: fly-m;
             animation-name: fly-m;
     -webkit-animation-duration: 2.5s;
@@ -1316,7 +1298,7 @@ footer {
     width: 300px;
     height: 60px;
     background-color: #282e2f;
-    border: 3px solid var(--color-main);
+    border: 3px solid #00ffc2;
     border-radius: 10px;
     color: white;
     font-size: 20px;
@@ -1377,7 +1359,7 @@ footer {
   .project-card-m {
     width: 90%;
     margin: 30px auto 30px auto;
-    border: 2px solid var(--color-main);
+    border: 2px solid #00ffc2;
     border-radius: 10px;
   }
   .project-m {
@@ -1394,7 +1376,7 @@ footer {
   .project-m h3 {
     text-align: center;
     margin-bottom: 10px;
-    color: var(--color-main);
+    color: #00ffc2;
     font-weight: 400;
   }
   .project-text-m {
@@ -1416,7 +1398,7 @@ footer {
   }
   .prev-btn-m {
     background-color: #282e2f;
-    border: 2px solid var(--color-main);
+    border: 2px solid #00ffc2;
     border-radius: 10px;
     width: 90px;
     margin-right: 20px;
@@ -1476,7 +1458,7 @@ footer {
     text-align: center;
     color: white;
     margin-bottom: 100px;
-    border: 3px solid var(--color-main);
+    border: 3px solid #00ffc2;
     -webkit-box-shadow: 10px 10px 4px rgba(0, 0, 0, 0.25);
             box-shadow: 10px 10px 4px rgba(0, 0, 0, 0.25);
     font-size: 18px;
@@ -1491,7 +1473,7 @@ footer {
     position: absolute;
     border-left: 20px solid transparent;
     border-right: 20px solid transparent;
-    border-bottom: 20px solid var(--color-main);
+    border-bottom: 20px solid #00ffc2;
     border-top: 20px solid transparent;
     display: inline-block;
     -webkit-transform: rotate(-45deg);
@@ -1519,7 +1501,7 @@ footer {
     text-align: center;
     color: white;
     margin-bottom: 90px;
-    border: 3px solid var(--color-main);
+    border: 3px solid #00ffc2;
     -webkit-box-shadow: 10px 10px 4px rgba(0, 0, 0, 0.25);
             box-shadow: 10px 10px 4px rgba(0, 0, 0, 0.25);
     font-size: 18px;
@@ -1534,7 +1516,7 @@ footer {
     position: absolute;
     border-left: 20px solid transparent;
     border-right: 20px solid transparent;
-    border-bottom: 20px solid var(--color-main);
+    border-bottom: 20px solid #00ffc2;
     border-top: 20px solid transparent;
     display: inline-block;
     -webkit-transform: rotate(45deg);
@@ -1581,7 +1563,7 @@ footer {
     outline: none;
     font-size: 20px;
     border-radius: 10px;
-    border: 1px solid var(--color-main);
+    border: 1px solid #00ffc2;
     background-color: #282e2f;
     color: white;
     padding: 5px;
@@ -1593,22 +1575,22 @@ footer {
     height: 150px;
     outline: none;
     border-radius: 10px;
-    border: 1px solid var(--color-main);
+    border: 1px solid #00ffc2;
     background-color: #282e2f;
     color: white;
     padding: 5px;
   }
   .plane1 {
-    color: var(--color-main);
+    color: #00ffc2;
   }
   .plane2 {
-    color: var(--color-main);
+    color: #00ffc2;
   }
   .envelope {
-    color: var(--color-main);
+    color: #00ffc2;
     position: absolute;
     background-color: #282e2f;
-    border: 2px solid var(--color-main);
+    border: 2px solid #00ffc2;
     font-size: 30px;
     padding: 10px;
     border-radius: 10px;

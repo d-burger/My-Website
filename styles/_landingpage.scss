@@ -1,0 +1,73 @@
+/*-----------------------------
+    NAVIGATION
+-----------------------------*/
+.header {
+  display: flex;
+  align-items: center;
+  height: 100px;
+  margin-bottom: 10em;
+  width: 90%;
+  margin: 0 auto 170px auto;
+}
+.logo {
+  width: 40%;
+}
+.logo-text {
+  color: $special-color;
+  font-size: 1.4rem;
+  letter-spacing: 2px;
+}
+nav {
+  width: 60%;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+.list {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 200px;
+  max-width: 1000px;
+}
+.list-item {
+  letter-spacing: 2px;
+  font-weight: 500;
+  font-size: 18px;
+}
+.white {
+  color: white;
+}
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 700px;
+  right: 100px;
+}
+.sidebar img {
+  max-width: 40px;
+  margin-top: 2em;
+}
+
+/*-----------------------------
+      HERO
+  -----------------------------*/
+.hero {
+  display: flex;
+  max-width: 1500px;
+  margin: auto;
+}
+.card-svg {
+  width: 100%;
+  max-width: 1190px;
+}
+.triangle {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+}
