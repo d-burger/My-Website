@@ -758,6 +758,23 @@ form {
   padding: 5px;
 }
 
+.sbmt-btn {
+  width: 150px;
+  height: 30px;
+  margin: 5px auto 0 auto;
+  color: white;
+  background-color: #282e2f;
+  border: 1px solid #00ffc2;
+  border-radius: 10px;
+  -webkit-box-shadow: 6px 6px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 6px 6px 4px rgba(0, 0, 0, 0.25);
+  letter-spacing: 1px;
+  font-size: 20px;
+}
+
+/*-----------------------------
+    FOOTER
+-----------------------------*/
 footer {
   border-top: 2px solid #00ffc2;
   margin: auto;
