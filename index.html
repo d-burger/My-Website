@@ -261,7 +261,7 @@
       <img class="contact-phone" src="./img/contact3.svg" alt="" />
       <div class="bubble-right bubble-bottom-left">Nice to meet you!</div>
       <div class="bubble-left bubble-bottom-right">
-        <form action="">
+        <!-- <form action="">
           <div class="first-line">
             <div class="input-container">
               <label class="label" for="email">Email</label>
@@ -280,6 +280,29 @@
           >
 Enter your message here...</textarea
           >
+        </form> -->
+        <form name="contact" method="POST" data-netlify="true">
+          <p>
+            <label>Your Name: <input type="text" name="name" /></label>
+          </p>
+          <p>
+            <label>Your Email: <input type="email" name="email" /></label>
+          </p>
+          <p>
+            <label
+              >Your Role:
+              <select name="role[]" multiple>
+                <option value="leader">Leader</option>
+                <option value="follower">Follower</option>
+              </select></label
+            >
+          </p>
+          <p>
+            <label>Message: <textarea name="message"></textarea></label>
+          </p>
+          <p>
+            <button type="submit">Send</button>
+          </p>
         </form>
       </div>
     </section>
