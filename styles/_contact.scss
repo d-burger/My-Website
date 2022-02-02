@@ -151,6 +151,10 @@ form {
   letter-spacing: 1px;
   font-size: 20px;
 }
+.sbmt-btn:hover {
+  color: $special-color;
+  border: 3px solid $special-color;
+}
 .hidden {
   display: none;
 }

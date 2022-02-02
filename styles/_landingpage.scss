@@ -34,10 +34,26 @@ a {
   max-width: 1000px;
 }
 .list-item {
+  position: relative;
   letter-spacing: 2px;
   font-weight: 500;
   font-size: 18px;
 }
+.list-item::after {
+  content: "";
+  position: absolute;
+  bottom: -3px;
+  left: 50%;
+  width: 0;
+  height: 1px;
+  background-color: $special-color;
+  transition: 0.3s ease-out;
+}
+.list-item:hover::after {
+  left: 0;
+  width: 100%;
+}
+
 .white {
   color: white;
 }
