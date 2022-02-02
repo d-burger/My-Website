@@ -261,7 +261,17 @@
       <img class="contact-phone" src="./img/contact3.svg" alt="" />
       <div class="bubble-right bubble-bottom-left">Nice to meet you!</div>
       <div class="bubble-left bubble-bottom-right">
-        <form name="contact-me" method="POST" data-netlify="true">
+        <form
+          name="contact-me"
+          method="POST"
+          netlify-honeypot="bot-field"
+          data-netlify="true"
+        >
+          <p class="hidden">
+            <label>
+              Don’t fill this out if you’re human: <input name="bot-field" />
+            </label>
+          </p>
           <div class="first-line">
             <div class="input-container">
               <input type="text" placeholder="Name" name="email" />
@@ -276,12 +286,8 @@
             placeholder="... Enter your message here"
             name="message"
           ></textarea>
-          <div class="submit-area">
-            <div class="field">
-              <div data-netlify-recaptcha="true"></div>
-            </div>
-            <button class="sbmt-btn" type="submit">Send</button>
-          </div>
+
+          <button class="sbmt-btn" type="submit">Send</button>
         </form>
       </div>
     </section>
