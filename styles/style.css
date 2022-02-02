@@ -758,6 +758,10 @@ form {
   padding: 5px;
 }
 
+.field {
+  width: 300px;
+}
+
 .sbmt-btn {
   width: 150px;
   height: 30px;
