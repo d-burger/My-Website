@@ -106,6 +106,7 @@
 }
 
 //------- < 1015px ----------------------------
+
 @media only screen and (max-width: 1015px) {
   .header,
   .hero,
@@ -134,14 +135,12 @@
     width: 100vw;
     top: 0;
     left: 0;
-
     background-color: $background-color;
   }
   .list-m {
     display: flex;
     flex-direction: column;
     height: 100%;
-
     align-items: center;
     justify-content: center;
     padding-bottom: 2.5em;
@@ -159,7 +158,6 @@
   }
   .close {
     position: absolute;
-    // display: none;
     top: 20px;
     right: 45px;
     z-index: 12;
@@ -698,5 +696,17 @@
   }
   footer {
     margin-top: 80px;
+  }
+}
+
+@media only screen and (max-height: 575px) {
+  .list-item-m {
+    margin: 1em;
+  }
+}
+
+@media only screen and (max-height: 320px) {
+  .list-item-m {
+    margin: 0.2em;
   }
 }

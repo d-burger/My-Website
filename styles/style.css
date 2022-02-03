@@ -1743,4 +1743,16 @@ footer {
     margin-top: 80px;
   }
 }
+
+@media only screen and (max-height: 575px) {
+  .list-item-m {
+    margin: 1em;
+  }
+}
+
+@media only screen and (max-height: 320px) {
+  .list-item-m {
+    margin: 0.2em;
+  }
+}
 /*# sourceMappingURL=style.css.map */
