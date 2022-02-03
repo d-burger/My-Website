@@ -175,6 +175,11 @@ a {
           transform: scale(1.5);
 }
 
+.social-icons-m a img:hover {
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+}
+
 /*-----------------------------
       HERO
   -----------------------------*/
@@ -1370,6 +1375,10 @@ footer {
     margin-top: 30px;
     margin-bottom: 30px;
   }
+  .btn-work-m:hover {
+    color: #00ffc2;
+    border: 5px solid #00ffc2;
+  }
   .projects-container {
     display: none;
   }
@@ -1468,6 +1477,12 @@ footer {
     margin-right: 20px;
     color: white;
     font-size: 16px;
+    -webkit-box-shadow: 6px 6px 4px rgba(0, 0, 0, 0.25);
+            box-shadow: 6px 6px 4px rgba(0, 0, 0, 0.25);
+  }
+  .prev-btn-m:hover {
+    color: #00ffc2;
+    border: 5px solid #00ffc2;
   }
   .project-img-m {
     width: 250px;
@@ -1662,6 +1677,10 @@ footer {
     left: 70px;
     -webkit-box-shadow: 10px 10px 4px rgba(0, 0, 0, 0.25);
             box-shadow: 10px 10px 4px rgba(0, 0, 0, 0.25);
+  }
+  .envelope:hover {
+    color: #00ffc2;
+    border: 5px solid #00ffc2;
   }
   footer {
     margin-top: 80px;

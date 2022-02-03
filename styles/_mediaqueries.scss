@@ -113,6 +113,7 @@
   .sidebar {
     display: none;
   }
+  // ----------------------- LANDINGPAGE --------------------------- //
   .mobile-header {
     display: flex;
     flex-direction: column;
@@ -397,6 +398,10 @@
     margin-top: 30px;
     margin-bottom: 30px;
   }
+  .btn-work-m:hover {
+    color: $special-color;
+    border: 5px solid $special-color;
+  }
 
   // ----------------------- PROJECTS --------------------------- //
   .projects-container {
@@ -474,6 +479,11 @@
     margin-right: 20px;
     color: white;
     font-size: 16px;
+    box-shadow: 6px 6px 4px rgba(0, 0, 0, 0.25);
+  }
+  .prev-btn-m:hover {
+    color: $special-color;
+    border: 5px solid $special-color;
   }
   .project-img-m {
     width: 250px;
@@ -631,6 +641,10 @@
     top: 530px;
     left: 70px;
     box-shadow: 10px 10px 4px rgba(0, 0, 0, 0.25);
+  }
+  .envelope:hover {
+    color: $special-color;
+    border: 5px solid $special-color;
   }
   footer {
     margin-top: 80px;
