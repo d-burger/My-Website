@@ -200,8 +200,39 @@
       <div class="bubble-right-m bubble-bottom-left-m">Nice to meet you!</div>
       <div class="bubble-left-m bubble-bottom-right-m">Let's talk!</div>
 
-      <button class="envelope">SEND</button>
+      <button class="envelope">Contact me</button>
     </section>
+    <div class="form-mbl-container">
+      <div class="close-form-container">
+        <button class="button-form-mobile close-form">Close</button>
+      </div>
+      <form
+        class="form-mbl"
+        name="contact-me"
+        method="POST"
+        netlify-honeypot="bot-field"
+        data-netlify="true"
+      >
+        <p class="hidden">
+          <label>
+            Don’t fill this out if you’re human: <input name="bot-field" />
+          </label>
+        </p>
+
+        <input type="text" placeholder="Name" name="email" />
+
+        <input type="email" placeholder="Email" name="email" />
+
+        <textarea
+          maxlength="1000"
+          placeholder="... Enter your message here"
+          name="message"
+        ></textarea>
+
+        <button class="button-form-mobile" type="submit">Send</button>
+      </form>
+    </div>
+
     <!-- ------------------- DESKTOP --------------------------------------- -->
     <section class="hero">
       <img class="card-svg" src="./img/card2.svg" alt="" />
