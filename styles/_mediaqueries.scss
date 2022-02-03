@@ -141,6 +141,9 @@
   .visible {
     display: block;
   }
+  .no-scroll {
+    overflow: hidden;
+  }
   .list-m {
     display: flex;
     flex-direction: column;
@@ -633,48 +636,86 @@
     left: 100px;
     bottom: -23px;
   }
-  .form-m {
-    width: 100%;
-    display: flex;
+  .form-mbl-container {
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    bottom: 0;
+    background-color: $background-color;
+    display: none;
     flex-direction: column;
-  }
-  .first-line-m {
-    display: flex;
-    width: 100%;
+    align-items: center;
     justify-content: center;
   }
-  .label-m {
-    font-size: 20px;
-    font-weight: 300;
-    margin-bottom: 5px;
-  }
-  .input-container-m {
+  .form-mbl {
+    background-color: $background-color;
     display: flex;
     flex-direction: column;
-
-    input {
-      width: 300px;
-      margin: 0 10px 0 10px;
-      outline: none;
-      font-size: 20px;
-      border-radius: 10px;
-      border: 1px solid $special-color;
-      background-color: $background-color;
-      color: white;
-      padding: 5px;
-    }
+    align-items: center;
+    justify-content: center;
   }
-  .message-m {
-    font-size: 20px;
-    margin: 13px;
-    resize: none;
-    height: 150px;
+
+  input {
+    width: 90%;
+    max-width: 400px;
+    margin: 10px;
     outline: none;
+
+    font-size: 20px;
     border-radius: 10px;
     border: 1px solid $special-color;
     background-color: $background-color;
     color: white;
     padding: 5px;
+    text-align: center;
+  }
+  textarea {
+    margin: 10px;
+    width: 90%;
+    max-width: 700px;
+    height: 350px;
+    max-height: 400px;
+    outline: none;
+
+    font-size: 20px;
+
+    resize: none;
+
+    border-radius: 10px;
+    border: 1px solid $special-color;
+    background-color: $background-color;
+    color: white;
+    padding: 5px;
+  }
+  .button-form-mobile {
+    width: 150px;
+    height: 30px;
+    margin: 5px auto 0 auto;
+    color: $base-color;
+    background-color: $background-color;
+    border: 1px solid $special-color;
+    border-radius: 10px;
+    box-shadow: 6px 6px 4px rgba(0, 0, 0, 0.25);
+    letter-spacing: 1px;
+    font-size: 20px;
+  }
+  .button-form-mobile:hover {
+    color: $special-color;
+    border: 3px solid $special-color;
+  }
+  .close-form-container {
+    width: 90%;
+  }
+  .close-form {
+    width: 100px;
+    float: right;
+    margin-bottom: 30px;
+    border: 1px solid gray;
+    font-size: 16px;
+  }
+
+  .visible-form {
+    display: flex;
   }
   .plane1 {
     color: $special-color;
@@ -683,20 +724,50 @@
     color: $special-color;
   }
   .envelope {
-    color: $special-color;
+    color: $base-color;
     position: absolute;
     background-color: $background-color;
-    border: 2px solid $special-color;
-    font-size: 30px;
+    border: 3px solid $special-color;
+    font-size: 18px;
     padding: 10px;
     border-radius: 10px;
-    top: 530px;
-    left: 70px;
+    top: 550px;
+    left: 60px;
     box-shadow: 10px 10px 4px rgba(0, 0, 0, 0.25);
+
+    animation-name: btn-glow-m;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+
+  @keyframes btn-glow-m {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
   }
   .envelope:hover {
     color: $special-color;
     border: 5px solid $special-color;
+  }
+  .form-mobile {
+    // display: none;
+    position: absolute;
+    background-color: $background-color;
+    height: 100vh;
+    width: 120vh;
+  }
+  .first-line {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
   footer {
     margin-top: 80px;
