@@ -1021,14 +1021,16 @@ footer {
   }
   .overlay-nav {
     position: absolute;
+    display: none;
     z-index: 10;
     height: 100vh;
     width: 100%;
     top: 0;
     left: 0;
     background-color: #282e2f;
-    -webkit-transform: translateX(100%);
-            transform: translateX(100%);
+  }
+  .visible {
+    display: block;
   }
   .list-m {
     display: -webkit-box;
