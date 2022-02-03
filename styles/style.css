@@ -14,7 +14,6 @@ html {
   background-color: #282e2f;
   min-width: 100%;
   scroll-behavior: smooth;
-  overflow-x: hidden;
 }
 
 /*-----------------------------
@@ -996,6 +995,9 @@ footer {
   .sidebar {
     display: none;
   }
+  body {
+    overflow-x: hidden;
+  }
   .mobile-header {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1020,6 +1022,7 @@ footer {
     margin: auto;
   }
   .overlay-nav {
+    display: none;
     position: absolute;
     display: none;
     z-index: 10;
