@@ -114,6 +114,10 @@
   .sidebar {
     display: none;
   }
+  body {
+    overflow-x: hidden;
+  }
+
   // ----------------------- LANDINGPAGE --------------------------- //
   .mobile-header {
     display: flex;
@@ -129,6 +133,7 @@
     }
   }
   .overlay-nav {
+    display: none;
     position: absolute;
     z-index: 10;
     height: 100vh;
@@ -136,7 +141,9 @@
     top: 0;
     left: 0;
     background-color: $background-color;
-    transform: translateX(100%);
+  }
+  .visible {
+    display: block;
   }
   .list-m {
     display: flex;
