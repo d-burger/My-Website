@@ -1,6 +1,13 @@
 /*-----------------------------
     MEDIA QUERIES
 -----------------------------*/
+@media only screen and (max-height: 930px) {
+  .sidebar {
+    top: 550px;
+    right: 50px;
+  }
+}
+
 //------- < 1580px ----------------------------
 @media only screen and (max-width: 1580px) {
   .list {
