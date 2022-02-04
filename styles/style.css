@@ -163,7 +163,7 @@ a {
   position: fixed;
   top: 700px;
   right: 100px;
-  z-index: 5;
+  z-index: 10;
 }
 
 .sidebar img {
@@ -871,6 +871,13 @@ footer {
 /*-----------------------------
     MEDIA QUERIES
 -----------------------------*/
+@media only screen and (max-height: 930px) {
+  .sidebar {
+    top: 550px;
+    right: 50px;
+  }
+}
+
 @media only screen and (max-width: 1580px) {
   .list {
     margin-right: 0px;
