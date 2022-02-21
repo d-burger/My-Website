@@ -1,9 +1,30 @@
 /*-----------------------------
     MEDIA QUERIES
 -----------------------------*/
+@media only screen and (max-height: 1000px) {
+  .sidebar {
+    top: 550px;
+    right: 50px;
+  }
+  .card-svg {
+    margin-top: -30px;
+  }
+}
 @media only screen and (max-height: 930px) {
   .sidebar {
     top: 550px;
+    right: 50px;
+  }
+}
+@media only screen and (max-height: 850px) {
+  .sidebar {
+    top: 500px;
+    right: 50px;
+  }
+}
+@media only screen and (max-height: 800px) {
+  .sidebar {
+    top: 450px;
     right: 50px;
   }
 }
