@@ -8,6 +8,7 @@ const contactFormMobile = document.querySelector(".form-mbl-container");
 const contactMeBtnMobile = document.querySelector(".envelope");
 const closeFormBtn = document.querySelector(".close-form");
 const submitFormBtn = document.querySelector(".mobile-form-submit-button");
+const sidebar = document.querySelector("#sidebar");
 
 // -------------- EVENT LISTENERS ----------------------
 // BURGER
@@ -29,16 +30,36 @@ navLinksMobile.forEach((link) => {
 });
 
 // MOBILE CONTACT FORM
-contactMeBtnMobile.addEventListener("click", () => {
-  contactFormMobile.classList.toggle("visible-form");
-  html.classList.toggle("no-scroll");
-});
+try {
+  contactMeBtnMobile.addEventListener("click", () => {
+    contactFormMobile.classList.toggle("visible-form");
+    html.classList.toggle("no-scroll");
+  });
+  closeFormBtn.addEventListener("click", () => {
+    contactFormMobile.classList.toggle("visible-form");
+    html.classList.toggle("no-scroll");
+  });
+  submitFormBtn.addEventListener("click", () => {
+    contactFormMobile.classList.toggle("visible-form");
+    html.classList.toggle("no-scroll");
+  });
+} catch (error) {
+  console.log("Error caught: " + error);
+}
 
-closeFormBtn.addEventListener("click", () => {
-  contactFormMobile.classList.toggle("visible-form");
-  html.classList.toggle("no-scroll");
-});
-submitFormBtn.addEventListener("click", () => {
-  contactFormMobile.classList.toggle("visible-form");
-  html.classList.toggle("no-scroll");
-});
+// SCROLLING
+// let endReached = false;
+// window.addEventListener("scroll", function () {
+//   console.log(window.pageYOffset + "px");
+//   if (window.pageYOffset >= 4100 && !endReached) {
+//     console.log("hello");
+//     endReached = true;
+//     sidebar.classList.remove("sidebar");
+//   }
+//   if (window.pageYOffset < 4100 && endReached) {
+//     console.log("hello");
+//     endReached = false;
+
+//     sidebar.classList.add("sidebar");
+//   }
+// });
