@@ -6,7 +6,7 @@
   margin: 100px auto 0 auto;
 }
 .projects {
-  height: 1060px;
+  height: 1030px;
   width: 900px;
   margin: auto;
   border: 3px solid rgba(63, 64, 64, 0.36);
@@ -88,6 +88,7 @@
 .project-img {
   position: absolute;
   width: 370px;
+
   border-radius: 10px;
   top: 35px;
   left: 300px;
@@ -100,4 +101,8 @@
 .hover-effect:hover {
   transform: scale(1.3);
   cursor: pointer;
+}
+.portfolio-img {
+  border: 1px solid $special-color;
+  height: 220px;
 }
