@@ -653,6 +653,11 @@ a {
   height: 220px;
 }
 
+.portfolio-img-m {
+  border: 1px solid #00ffc2;
+  height: 145px;
+}
+
 /*-----------------------------
     CONTACT
 -----------------------------*/
