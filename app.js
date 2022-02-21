@@ -46,20 +46,3 @@ try {
 } catch (error) {
   console.log("Error caught: " + error);
 }
-
-// SCROLLING
-// let endReached = false;
-// window.addEventListener("scroll", function () {
-//   console.log(window.pageYOffset + "px");
-//   if (window.pageYOffset >= 4100 && !endReached) {
-//     console.log("hello");
-//     endReached = true;
-//     sidebar.classList.remove("sidebar");
-//   }
-//   if (window.pageYOffset < 4100 && endReached) {
-//     console.log("hello");
-//     endReached = false;
-
-//     sidebar.classList.add("sidebar");
-//   }
-// });
